@@ -1,0 +1,90 @@
+{
+        "RESTAURANTS":[{
+            "id": 1,
+            "name": "Cafe Coffee Day",
+            "locality": "Viman Nagar",
+            "openTiming": "8 am",
+            "closeTiming": "10 pm",
+            "rating": "4.5",
+            "image": [
+                "assets/restaurant.jpg"
+            ],
+            "facilities": [
+                "washroom",
+                "dance floor"
+            ],
+            "cuisines": [
+                "pizza",
+                "burger",
+                "coffee",
+                "chinese",
+                "italian"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Cafe Coffee Day",
+            "locality": "Viman Nagar",
+            "openTiming": "8 am",
+            "closeTiming": "10 pm",
+            "rating": "4.5",
+            "image": [
+                "assets/restaurant.jpg"
+            ],
+            "facilities": [
+                "washroom",
+                "dance floor"
+            ],
+            "cuisines": [
+                "pizza",
+                "burger",
+                "coffee",
+                "chinese",
+                "italian"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Cafe Coffee Day",
+            "locality": "Viman Nagar",
+            "openTiming": "8 am",
+            "closeTiming": "10 pm",
+            "rating": "4.5",
+            "image": [
+                "assets/restaurant.jpg"
+            ],
+            "facilities": [
+                "washroom",
+                "dance floor"
+            ],
+            "cuisines": [
+                "pizza",
+                "burger",
+                "coffee",
+                "chinese",
+                "italian"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Cafe Coffee Day",
+            "locality": "Viman Nagar",
+            "openTiming": "8 am",
+            "closeTiming": "10 pm",
+            "rating": "4.5",
+            "image": [
+                "assets/restaurant.jpg"
+            ],
+            "facilities": [
+                "washroom",
+                "dance floor"
+            ],
+            "cuisines": [
+                "pizza",
+                "burger",
+                "coffee",
+                "chinese",
+                "italian"
+            ]
+        }]
+}

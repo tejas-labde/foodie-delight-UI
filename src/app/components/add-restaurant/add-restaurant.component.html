@@ -1,0 +1,34 @@
+<div class="restaurant-details-form-container">
+        <h2>Add new Restaurant</h2>
+    <form [formGroup]="addRestaurantForm">
+        <div class="form-field-container">
+            <mat-label>Restaurant Name</mat-label>
+            <mat-form-field appearance="fill">
+                <input matInput type="text" class="input-field" formControlName="name" placeholder="Name">
+                <mat-error ></mat-error>
+            </mat-form-field>
+        </div>
+        <div class="form-field-container">
+            <mat-label>Location</mat-label>
+            <mat-form-field appearance="fill">
+                <input matInput type="text" class="input-field" formControlName="locality" placeholder="Locality">
+            </mat-form-field>
+        </div>
+        <div class="form-field-container">
+            <mat-label>Starting Time</mat-label>
+            <mat-form-field appearance="fill">
+                <input matInput type="text" class="input-field" formControlName="openTiming" placeholder="Start Time">
+            </mat-form-field>
+        </div>
+        <div class="form-field-container">
+            <mat-label>Closing Time</mat-label>
+            <mat-form-field appearance="fill">
+                <input matInput type="text" class="input-field" formControlName="closeTiming" placeholder="Close Time">
+            </mat-form-field>
+        </div>
+        <div class="form-btn-container">
+            <button mat-flat-button  (click)="cancel()">Cancel</button>
+            <button mat-flat-button  (click)="addNewRestaurant()">Add Restaurant</button>
+        </div>
+    </form>
+</div>

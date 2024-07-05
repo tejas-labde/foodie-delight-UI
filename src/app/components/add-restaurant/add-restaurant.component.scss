@@ -1,0 +1,21 @@
+.restaurant-details-form-container {
+    .form-field-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        padding-top: 0.5rem;
+    }
+
+    .form-btn-container {
+        display: flex;
+        justify-content: center;
+        gap:1rem;
+
+        .mat-flat-button{
+            background: #0099d1;
+            color:#f5f5f5;
+        }
+    }
+
+
+}

@@ -1,0 +1,22 @@
+.card-container{
+    border:1px solid black;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px;
+    padding: 10px;
+
+    ul{
+        margin:4px;
+    }
+
+    mat-card-actions{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    img[mat-card-image] {
+        width: 100%;
+        height: auto; 
+        padding:0rem 0.25rem 0.25rem 1rem;
+    }
+}

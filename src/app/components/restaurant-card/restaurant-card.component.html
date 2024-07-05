@@ -1,0 +1,16 @@
+<mat-card class="card-container" appearance="outlined">
+    <mat-card-header>
+        <mat-card-title>{{cardDetails.name}}</mat-card-title>
+        <mat-card-subtitle>{{cardDetails.locality}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="cardDetails.image[0]" alt="{{cardDetails.name}}">
+    <mat-card-content>
+            <p>Timing: <span>{{cardDetails.openTiming}} - {{cardDetails.closeTiming}}</span></p>
+            <p>Rating: <span>{{cardDetails.rating}}</span></p>
+    </mat-card-content>
+
+    <mat-card-actions>
+        <button mat-flat-button (click)="onViewClick()">View</button>
+        <button mat-flat-button (click)="onDeleteClick()">Delete</button>
+    </mat-card-actions>
+</mat-card>
