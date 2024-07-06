@@ -40,6 +40,7 @@ export class HomePageComponent implements OnInit {
   addNewRestaurant() {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.width = '400px';
+    dialogConfig.height='600px';
     dialogConfig.hasBackdrop = true;
     dialogConfig.disableClose = false;
     dialogConfig.autoFocus = true;

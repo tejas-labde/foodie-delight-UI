@@ -1,6 +1,6 @@
 <div class="restaurant-details-form-container">
         <h2>Add new Restaurant</h2>
-    <form [formGroup]="addRestaurantForm">
+    <form [formGroup]="addRestaurantForm" (ngSubmit)="addNewRestaurant()">
         <div class="form-field-container">
             <mat-label>Restaurant Name</mat-label>
             <mat-form-field appearance="fill">
@@ -15,20 +15,38 @@
             </mat-form-field>
         </div>
         <div class="form-field-container">
+            <mat-label>Image</mat-label>
+            <mat-form-field appearance="fill">
+                <input matInput type="text" class="input-field" formControlName="image" placeholder="Restaurant Image URL">
+            </mat-form-field>
+        </div>
+        <div class="form-field-container">
             <mat-label>Starting Time</mat-label>
             <mat-form-field appearance="fill">
-                <input matInput type="text" class="input-field" formControlName="openTiming" placeholder="Start Time">
+                <input matInput type="time" class="input-field" formControlName="openTiming" placeholder="Start Time">
             </mat-form-field>
         </div>
         <div class="form-field-container">
             <mat-label>Closing Time</mat-label>
             <mat-form-field appearance="fill">
-                <input matInput type="text" class="input-field" formControlName="closeTiming" placeholder="Close Time">
+                <input matInput type="time" class="input-field" formControlName="closeTiming" placeholder="Close Time">
+            </mat-form-field>
+        </div>
+        <div class="form-field-container">
+            <mat-label>Facilities</mat-label>
+            <mat-form-field appearance="fill">
+                <input matInput type="text" class="input-field" formControlName="facilities" placeholder="Facilities(eg. Wifi, Dance Floor, Smoking Zone)">
+            </mat-form-field>
+        </div>
+        <div class="form-field-container">
+            <mat-label>Cuisines</mat-label>
+            <mat-form-field appearance="fill">
+                <input matInput type="text" class="input-field" formControlName="cuisines" placeholder="Cuisines">
             </mat-form-field>
         </div>
         <div class="form-btn-container">
             <button mat-flat-button  (click)="cancel()">Cancel</button>
-            <button mat-flat-button  (click)="addNewRestaurant()">Add Restaurant</button>
+            <button mat-flat-button type="submit">Add Restaurant</button>
         </div>
     </form>
 </div>

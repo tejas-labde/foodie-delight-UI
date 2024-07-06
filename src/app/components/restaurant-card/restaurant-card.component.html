@@ -3,10 +3,10 @@
         <mat-card-title>{{cardDetails.name}}</mat-card-title>
         <mat-card-subtitle>{{cardDetails.locality}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image [src]="cardDetails.image[0]" alt="{{cardDetails.name}}">
+    <img mat-card-image [src]="cardDetails.image" alt="{{cardDetails.name}}">
     <mat-card-content>
-            <p>Timing: <span>{{cardDetails.openTiming}} - {{cardDetails.closeTiming}}</span></p>
-            <p>Rating: <span>{{cardDetails.rating}}</span></p>
+            <p><b>Timing: </b> <span>{{cardDetails.openTiming}} - {{cardDetails.closeTiming}}</span></p>
+            <p><b>Rating: </b> <span>{{cardDetails.rating}}</span></p>
     </mat-card-content>
 
     <mat-card-actions>

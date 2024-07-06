@@ -16,4 +16,9 @@ export class RestaurantService {
   getRestaurantDetails(id: number) {
     return this.httpClient.get(`${apiRoutes.GET_RESTAURANTS}/${id}`);
   }
+
+  addNewRestaurant(restaurantDetails:any){
+    return this.httpClient.post(apiRoutes.GET_RESTAURANTS,restaurantDetails)
+  }
+  
 }
